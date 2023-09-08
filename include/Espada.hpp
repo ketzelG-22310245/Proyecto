@@ -1,7 +1,7 @@
-class Bomba
+class Espada
 {
     private:
     int Golpear();
 
-    ~Bomba(){}
+    ~Espada(){}
 };
