@@ -2,8 +2,8 @@
 
 class Arco
 {
-    private:
+private:
     int Lanzar();
 
-    ~Arco(){}
+    ~Arco() {}
 };

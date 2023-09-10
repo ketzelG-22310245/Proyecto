@@ -2,8 +2,8 @@
 
 class Escudo
 {
-    private:
+private:
     int Cubrir();
 
-    ~Escudo(){}
+    ~Escudo() {}
 };

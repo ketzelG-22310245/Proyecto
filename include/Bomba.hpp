@@ -2,8 +2,8 @@
 
 class Bomba
 {
-    private:
+private:
     int Golpear();
 
-    ~Bomba(){}
+    ~Bomba() {}
 };

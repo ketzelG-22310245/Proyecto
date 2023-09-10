@@ -2,8 +2,8 @@
 
 class Pocion
 {
-    public:
+public:
     int Curar();
 
-    ~Pocion(){}
+    ~Pocion() {}
 };

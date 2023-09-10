@@ -2,8 +2,8 @@
 
 class Espada
 {
-    private:
+private:
     int Golpear();
 
-    ~Espada(){}
+    ~Espada() {}
 };

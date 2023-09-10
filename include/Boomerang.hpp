@@ -2,8 +2,8 @@
 
 class Boomerang
 {
-    private:
+private:
     int Lanzar();
 
-    ~Boomerang(){}
+    ~Boomerang() {}
 };

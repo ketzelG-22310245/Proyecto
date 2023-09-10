@@ -2,26 +2,31 @@
 
 class Mascota
 {
-    private:
+private:
     int hambre;
     std::string nombre;
-    
-    public:
-    Mascota(std::string nombre){
+
+public:
+    Mascota(std::string nombre)
+    {
         this->hambre = 0;
         this->nombre = nombre;
     }
-    ~Mascota(){}
-    void jugar(){
+    ~Mascota() {}
+    void jugar()
+    {
         this->hambre += 5;
     }
-    void comer(int comida){
+    void comer(int comida)
+    {
         this->hambre -= comida;
     }
-    std::string DecirNombre(){
+    std::string DecirNombre()
+    {
         return this->nombre;
     }
-    int DecirHambre(){
+    int DecirHambre()
+    {
         return this->hambre;
     }
 };

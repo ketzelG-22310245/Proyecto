@@ -2,8 +2,8 @@
 
 class Keese
 {
-    private:
+private:
     int Volar();
 
-    ~Keese(){}
+    ~Keese() {}
 };
