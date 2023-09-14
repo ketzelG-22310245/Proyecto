@@ -1,5 +1,98 @@
 @startuml
 
-class link
+class Link{
+    + Mover_izquierda()
+    + Mover_derecha()
+    + Mover_arriba()
+    + Mover_abajo()
+    + Atacar()
+}
+class Herramienta
+class Espada{
+    + Golpear()
+}
+class Escudo{
+    + Cubrir()
+}
+class Bomba{
+    + Explotar()
+}
+class Boomerang{
+    + Lanzar()
+}
+class Arco{
+    + Lanzar()
+}
+class Pocion{
+    + Curar()
+}
+class Pocion_roja
+class Pocion_azul
+class Enemigo{
+    + Atacar()
+    + Mover_izquierda()
+    + Mover_derecha()
+    + Mover_arriba()
+    + Mover_abajo()
+}
+class Moblin
+class Goron
+class Keese{
+    + Volar()
+}
+class Gibdos
+class Goriya
+class Leever
+class Jefe{
+    + Atacar()
+    + Mover_izquierda()
+    + Mover_derecha()
+    + Mover_arriba()
+    + Mover_abajo()
+}
+class Aquamentus
+class Manhandla
+class Gleeok
+class Ganon
+class Zelda
+class Trifuerza
+class Trifuerza_poder
+class Trifuerza_sabiduria
+class Trifuerza_valor
+
+Link *-- Herramienta
+Link o-- Zelda
+Herramienta <|-- Espada
+Herramienta <|-- Escudo
+Herramienta <|-- Bomba
+Herramienta <|-- Boomerang
+Herramienta <|-- Arco
+Stalfos *-- Espada
+Moblin *-- Arco
+Goron *-- Bomba
+Ganon *-- Espada
+Link o-- Pocion
+Pocion <|-- Pocion_roja
+Pocion <|-- Pocion_azul
+Link o-- Enemigo
+Enemigo <|-- Moblin
+Enemigo <|-- Goron
+Enemigo <|-- Stalfos
+Enemigo <|-- Keese
+Enemigo <|-- Gibdos
+Enemigo <|-- Goriya
+Enemigo <|-- Leever
+Link o-- Jefe
+Jefe <|-- Aquamentus
+Jefe <|-- Manhandla
+Jefe <|-- Gleeok
+Jefe <|-- Ganon
+Trifuerza <|-- Trifuerza_poder
+Trifuerza <|-- Trifuerza_sabiduria
+Trifuerza <|-- Trifuerza_valor
+Zelda *-- Trifuerza_sabiduria
+Ganon *-- Trifuerza_poder
+Link *-- Trifuerza_valor
+
 
 @enduml
