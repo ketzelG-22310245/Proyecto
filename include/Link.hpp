@@ -1,13 +1,15 @@
+#pragma once
 #include <string>
 
-class Link
+class Link : public Dibujo, public Actualizable
 {
 private:
-    int Mover_izquierda();
-    int Mover_derecha();
-    int Mover_arriba();
-    int Mover_abajo();
-    int Atacar();
-
+    /* data */
+public:
+    Link(/* args */) : Dibujo("")
+    {}
     ~Link() {}
+    void Actualizar(){
+        
+    }
 };

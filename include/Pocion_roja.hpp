@@ -1,3 +1,5 @@
+#pragma once
+
 class Pocion_roja
 {
 private:

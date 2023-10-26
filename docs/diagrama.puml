@@ -1,4 +1,4 @@
-@startuml
+@startuml Zelda
 
 class Link{
     + Mover_izquierda()
@@ -60,6 +60,11 @@ class Trifuerza_poder
 class Trifuerza_sabiduria
 class Trifuerza_valor
 
+Sprite "1" *- "*" Dibujo
+
+Juego *- Link
+Juego *- Escenario
+
 Link *-- Herramienta
 Link o-- Zelda
 Herramienta <|-- Espada
@@ -94,5 +99,8 @@ Zelda *-- Trifuerza_sabiduria
 Ganon *-- Trifuerza_poder
 Link *-- Trifuerza_valor
 
+Link -|> Sprite
+Ventana o-- Dibujo
+Ventana -- Actualizable
 
 @enduml

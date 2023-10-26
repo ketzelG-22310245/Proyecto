@@ -1,21 +1,39 @@
-#include <iostream>
-#include <Mascota.hpp>
+#include <Ventana.hpp>
+#include <Dibujo.hpp>
+#include <Actualizable.hpp>
+#include <Controlador.hpp>
+#include <curses.h>
+#include <unistd.h>
+#include <list>
+#include <Link.hpp>
+
+using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    std::cout << "Juego de mascotas" << std::endl;
+    Ventana v;
+    Link* link = new Link();
+    Controlador* control = new Controlador();
 
-    Mascota m1("Spike");
+    Dibujo* d1 = new Dibujo (3,10,"");
+    Dibujo* d2 = new Dibujo (3,10,"");
 
-    m1.jugar();
-    m1.jugar();
-    m1.jugar();
+    list<Dibujo*> dibujos;
+    dibujos.push_back(d1);
+    dibujos.push_back(d2);
+    dibujos.push_back(link);
 
-    std::cout
-        << m1.DecirNombre() << " tiene "
-        << m1.DecirHambre() << " de hambre." << std::endl;
+    list<Actualizable*> actualizables;
+    actualizables.push_back(control);
+    actualizables.push_back(link);
 
-    m1.comer(5);
+        bool ejecucion=true;
+        while (ejecucion)
+        {
+            // Clico de dibujo
+            v.Actualizar(actualizables);
+            v.Dibujar(dibujos);
+        }
 
     return 0;
 }
