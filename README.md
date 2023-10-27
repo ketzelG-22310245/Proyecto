@@ -17,7 +17,7 @@ Ganon o tambien conocido como la forma salvaje de Ganandorf, es lider de una raz
 ![](http://img2.wikia.nocookie.net/__cb20100413011018/zelda/images/1/18/Ganon_(Oracle_of_Ages_%26_Oracle_of_Seasons).png)
 
 ## Diagrama
-![](/out/docs/diagrama/diagrama.png)
+![](![](/image.png))
 
 
 ## Jugabilidad

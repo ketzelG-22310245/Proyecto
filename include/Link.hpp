@@ -8,9 +8,10 @@ private:
     /* data */
 public:
     Link(/* args */) : Dibujo("Link")
-    {}
+    {
+    }
     ~Link() {}
-    void Actualizar(){
-        
+    void Actualizar()
+    {
     }
 };

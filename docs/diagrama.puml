@@ -102,5 +102,8 @@ Link *-- Trifuerza_valor
 Link -|> Sprite
 Ventana o-- Dibujo
 Ventana -- Actualizable
+Dibujo o-- Escenario
+Link *-- Dibujo
+Escenario *-- Dibujo
 
 @enduml

@@ -9,18 +9,19 @@ private:
 public:
     Controlador(/* args */) {}
     ~Controlador() {}
-    void Actualizar(){
-         // Ciclo de actualizacion
-            // v.Actualizar();
-            // if(getch()=='q'){
-            //   ejecucion = false;
-            // }
-            // if(getch()=='a'){
-            //   d2.RetrocederX(1);
-            // }
+    void Actualizar()
+    {
+        // Ciclo de actualizacion
+        // v.Actualizar();
+        // if(getch()=='q'){
+        //   ejecucion = false;
+        // }
+        // if(getch()=='a'){
+        //   d2.RetrocederX(1);
+        // }
 
-            // if(getch()=='d'){
-            //   d2.AvanzarX(1);
-            // }
+        // if(getch()=='d'){
+        //   d2.AvanzarX(1);
+        // }
     }
 };
