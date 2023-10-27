@@ -20,7 +20,7 @@ Ganon o tambien conocido como la forma salvaje de Ganandorf, es lider de una raz
 Las teclas para mover a Link por la pantalla son: W, A, S, D, del teclado.
 
 ## Diagrama
-![](/workspaces/Proyecto/out/docs/diagrama/Zelda.png)
+![](/out/docs/diagrama/Zelda.png)
 
 ## Contacto
 a22310245@ceti.mx
