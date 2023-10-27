@@ -2,38 +2,47 @@
 #include <Dibujo.hpp>
 #include <Actualizable.hpp>
 #include <Controlador.hpp>
+#include <Link.hpp>
 #include <curses.h>
 #include <unistd.h>
 #include <list>
-#include <Link.hpp>
+
 
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
     Ventana v;
-    Link* link = new Link();
-    Controlador* control = new Controlador();
+    Dibujo d("Link");
+    d.Dibujar();
 
-    Dibujo* d1 = new Dibujo (3,10,"");
-    Dibujo* d2 = new Dibujo (3,10,"");
+    v.iniciar();
+    v.Dibujar();
+   // Dibujo d("Link");
+  //d.Dibujar();
 
-    list<Dibujo*> dibujos;
-    dibujos.push_back(d1);
-    dibujos.push_back(d2);
-    dibujos.push_back(link);
+// Link* link = new Link();
+//  Controlador* control = new Controlador();
 
-    list<Actualizable*> actualizables;
-    actualizables.push_back(control);
-    actualizables.push_back(link);
+// Dibujo d1 (4,10,"Link");
+// d1.Imprimir();
 
-        bool ejecucion=true;
-        while (ejecucion)
-        {
-            // Clico de dibujo
-            v.Actualizar(actualizables);
-            v.Dibujar(dibujos);
-        }
+// dibujos.push_back(d1);
+//dibujos.push_back(link);
+
+//list<Actualizable*> actualizables;
+//actualizables.push_back(control);
+//actualizables.push_back(link);
+
+//   bool ejecucion=true;
+//   while (ejecucion)
+//    {
+// Clico de dibujo
+//       v.Actualizar(actualizables);
+//       d1->Imprimir();//    }
+
+//   delete link;
+//   delete d1;
 
     return 0;
 }

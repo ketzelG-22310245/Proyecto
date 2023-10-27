@@ -1,6 +1,6 @@
 #pragma once
-#include <Dibujo.hpp>
 #include <curses.h>
+#include <Dibujo.hpp>
 
 class Marco : public Dibujo
 {
@@ -10,6 +10,6 @@ public:
     Marco(/* args */) {}
     ~Marco() {}
     void Dibujar(){
-        box(stdscr, '#', '#')
+        box(stdscr, '#', '#');
     }
 };
